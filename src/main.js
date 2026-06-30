@@ -1,0 +1,11 @@
+import "./js/header";
+import "./js/check_year";
+import "./js/guest_num";
+import "./js/rock_scissors_paper";
+import "./js/calculator";
+import "./js/time_calculator";
+import "./js/biggest_num";
+import "./js/our_team";
+import "./js/football";
+import "./js/choose_scientist";
+import "./js/footer";
