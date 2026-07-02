@@ -18,18 +18,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-3cfb730f.js"></script>
+    
+    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-bab1056e.js"></script>
+    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-bf88187d.css">
   </head>
   <body>
     <header>header</header>
     <main>
-      <h1>Популярні інтерактивні ігри</h1>
+      <h1 class="main_title">Популярні інтерактивні ігри</h1>
       
       
-<section class="guess-the-number__section, card" >   
-    <h2 class="guess-the-number__title">Вгадай число, яке загадав комп’ютер</h2>
+<section class="guess-the-number__section card" >   
+    <h2 class="guess-the-number__title title">Вгадай число, яке загадав комп’ютер</h2>
     <ul class="guess-the-number__list">
         <li class="guess-the-number__item">
             <input type="text" class="guess-the-number__input" placeholder="Введіть число">
@@ -45,73 +45,69 @@
 </section>
 
 
-      <section class="rsp">
-  <div class="container">
-    <h2 class="rsp_title">Камінь - ножиці - папір</h2>
-    <ul class="rsp_list">
-      <li class="rsp_item">
-        <button class="rsp_item-button">
-          <img src="../img/rock.svg" alt="rock" />
-        </button>
+      <div class="rsp card">
+  <h2 class="rsp_title title">Камінь - ножиці - папір</h2>
+  <ul class="rsp_list">
+    <li class="rsp_item">
+      <button class="rsp_item-button">
+        <img src="../img/rock.svg" alt="rock" />
+      </button>
+    </li>
+    <li class="rsp_item">
+      <button class="rsp_item-button">
+        <img src="../img/scissors.svg" alt="scissors" />
+      </button>
+    </li>
+    <li class="rsp_item">
+      <button class="rsp_item-button">
+        <img src="../img/paper.svg" alt="paper" />
+      </button>
+    </li>
+  </ul>
+  <p class="rsp_result"></p>
+  <button class="rsp_button">Варіант компʼютера</button>
+  <div class="rsp_score">
+    <p class="rsp_score-result">Рахунок</p>
+    <p class="rsp_score-pc">Комп'ютер - 0</p>
+    <p class="rsp_score-you">Ви - 0</p>
+  </div>
+</div>
+
+      <div class="calc card">
+  <h2 class="calc_title title">Калькулятор</h2>
+  <div class="calc_content">
+    <input
+      type="text"
+      class="calc_content-firstnum"
+      placeholder="Введіть число"
+    />
+    <ul class="calc_content-list">
+      <li class="calc_content-item">
+        <button class="calc_content-item-plus">+</button>
       </li>
-      <li class="rsp_item">
-        <button class="rsp_item-button">
-          <img src="../img/scissors.svg" alt="scissors" />
-        </button>
+      <li class="calc_content-item">
+        <button class="calc_content-item-multiplied">*</button>
       </li>
-      <li class="rsp_item">
-        <button class="rsp_item-button">
-          <img src="../img/paper.svg" alt="paper" />
-        </button>
+      <li class="calc_content-item">
+        <button class="calc_content-item-minus">-</button>
+      </li>
+      <li class="calc_content-item">
+        <button class="calc_content-item-divided">/</button>
       </li>
     </ul>
-    <p class="rsp_result"></p>
-    <button class="rsp_button">Варіант компʼютера</button>
-    <div class="rsp_score">
-      <p class="rsp_score-result">Рахунок</p>
-      <p class="rsp_score-pc">Комп'ютер - 0</p>
-      <p class="rsp_score-you">Ви - 0</p>
-    </div>
+    <input
+      type="text"
+      class="calc_content-secondnum"
+      placeholder="Введіть число"
+    />
+    <button class="calc_content-equals">=</button>
+    <p class="calc_content-result">Результат</p>
   </div>
-</section>
+</div>
 
-      <section class="calc">
+      <section class="calc_time card">
   <div class="container">
-    <h2 class="calc_title">Калькулятор</h2>
-    <div class="calc_content">
-      <input
-        type="text"
-        class="calc_content-firstnum"
-        placeholder="Введіть число"
-      />
-      <ul class="calc_content-list">
-        <li class="calc_content-item">
-          <button class="calc_content-item-plus">+</button>
-        </li>
-        <li class="calc_content-item">
-          <button class="calc_content-item-multiplied">*</button>
-        </li>
-        <li class="calc_content-item">
-          <button class="calc_content-item-minus">-</button>
-        </li>
-        <li class="calc_content-item">
-          <button class="calc_content-item-divided">/</button>
-        </li>
-      </ul>
-      <input
-        type="text"
-        class="calc_content-secondnum"
-        placeholder="Введіть число"
-      />
-      <button class="calc_content-equals">=</button>
-      <p class="calc_content-result">Результат</p>
-    </div>
-  </div>
-</section>
-
-      <section class="calc_time">
-  <div class="container">
-    <h2 class="calc_time_title">Калькулятор часу</h2>
+    <h2 class="calc_time_title title">Калькулятор часу</h2>
     <form class="calc_time_form">
       <input class="calc_time_input" type="text" placeholder="Введіть число"/>
       <button class="calc_time_button"><img src="/Magicgames-project_Dreamteam/assets/search-dffae418.svg" alt="search"></button>
@@ -121,9 +117,9 @@
   </div>
 </section>
 
-      <div class="biggest_num">
+      <div class="biggest_num card">
     <div class="border"></div>
-    <h2 class="number__title">Введіть 3 числа</h2>
+    <h2 class="number__title title">Введіть 3 числа</h2>
     <ul class="num__list">
         <input class="num__item" type="text" placeholder="Введіть число" id="one-input">
         <input class="num__item" type="text" placeholder="Введіть число" id="two-input">
@@ -131,8 +127,8 @@
     </ul>
     <p class="number__text" id="time-result">Найбільше число, яке ви ввели -</p>
 </div>
-      <div>
-      <h2>Наша команда</h2>
+      <div class="card">
+      <h2 class="title">Наша команда</h2>
 
   <div>
     <img src="/Magicgames-project_Dreamteam/assets/arrowlft-f75428af.svg" alt="ліва стрілка" />
@@ -157,7 +153,7 @@
 
 
       <div class="card">
-  <h2 class="card__title">Футбол</h2>
+  <h2 class="card__title title">Футбол</h2>
   <div class="football__box">
     <div class="football__game" id="field">
       <img class="football_rectangle" src="../img/green.svg" alt="поле" />
@@ -167,9 +163,9 @@
   </div>
 </div>
 
-      <section class="choose_scientist">
+      <section class="choose_scientist card">
   <div class="container">
-    <h2 class="choose_scientist_title">Обери вченого/их</h2>
+    <h2 class="choose_scientist_title title">Обери вченого/их</h2>
     <ul class="choose_scientist_list"></ul>
     <div class="choose_scientist_request"></div>
   </div>
@@ -177,27 +173,25 @@
 
     </main>
     <footer class="footer">
-  <div class="container">
-    <img src="../img/logo.svg" alt="logo" />
-    <p class="footer_text">
-      Тел: +38 (123) 456 78 90 <br />
-      E-Mail: codingmagic@gmail.com <br />
-      Facebook: CodingMagic <br />
-      Twitter: CodingMagic <br />
-      Instagram: CodingMagic
+  <img src="../img/logo.svg" alt="logo" />
+  <p class="footer_text">
+    Тел: +38 (123) 456 78 90 <br />
+    E-Mail: codingmagic@gmail.com <br />
+    Facebook: CodingMagic <br />
+    Twitter: CodingMagic <br />
+    Instagram: CodingMagic
+  </p>
+  <div class="footer_subscribe">
+    <form class="footer_subscribe-form">
+      <input
+        class="footer_subscribe-form-input"
+        placeholder="Ваша ел. адреса..."
+      />
+      <button class="footer_subscribe-form-button">Підписатись</button>
+    </form>
+    <p class="footer_subscribe-text">
+      *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
     </p>
-    <div class="footer_subscribe">
-      <form class="footer_subscribe-form">
-        <input
-          class="footer_subscribe-form-input"
-          placeholder="Ваша ел. адреса..."
-        />
-        <button class="footer_subscribe-form-button">Підписатись</button>
-      </form>
-      <p class="footer_subscribe-text">
-        *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
-      </p>
-    </div>
   </div>
 </footer>
 
