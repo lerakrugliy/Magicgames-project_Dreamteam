@@ -5,3 +5,9 @@
     color: #000;
     text-align: center;
 }
+
+body{
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
