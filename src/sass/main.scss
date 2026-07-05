@@ -1,6 +1,7 @@
 @use "./base/reset";
 @use "./base/common";
-@use "./componets/container";
+@use "./components/card";
+@use "./components/title";
 @use "./utils/variables";
 @use "./layout/header";
 @use "./layout/check_year";
@@ -10,7 +11,8 @@
 @use "./layout/time_calculator";
 @use "./layout/biggest_num";
 @use "./layout/our_team";
-@use "./layout/footer";
+@use "./layout/football";
 @use "./layout/choose_scientist";
 @use "./layout/footer";
-@use "./layout/footer";
+@use "./layout/header_modal";
+@use "./layout/footer_modal";

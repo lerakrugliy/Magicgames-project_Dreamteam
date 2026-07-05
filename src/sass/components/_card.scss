@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: var(--main-text-color);
+    width: 536px;
+    margin-bottom: 35px;
+  }
+}
