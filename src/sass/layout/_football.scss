@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.football {
+  padding-bottom: 36px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+     font-family: "Montserrat Alternates", sans-serif;
+  }
+
+  &__box {
+    display: flex;
+    margin: 36px auto 0;
+    width: 100%;
+    max-width: 720px;
+    height: 220px;
+  }
+
+  &__game {
+    background-color: #5ABB58;
+    width: 100%;
+    height: 220px;
+    border-radius: 37px;
+    border: 2px solid #000000;
+    position: relative;
+    overflow: hidden;
+    cursor: default; 
+  }
+
+  &__ball {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    
+    transition: top 500ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms, 
+                left 500ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
+  }
+
+  &__cursor {
+    position: absolute;
+    top: 50%;
+    right: 35%; 
+    transform: translateY(-50%);
+    
+    width: 25px; 
+    height: auto;
+    
+    pointer-events: none; 
+  }
+}
