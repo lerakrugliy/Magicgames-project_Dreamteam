@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-a9720da4.js"></script>
-    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-561810ce.css">
+    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-84377c0c.js"></script>
+    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-d3e0bac9.css">
   </head>
   <body>
     
@@ -142,38 +142,48 @@
     </ul>
     <p class="number__text" id="time-result">Найбільше число, яке ви ввели -</p>
 </div>
-      <div class="card">
-      <h2 class="title">Наша команда</h2>
-
-  <div>
-    <img src="/Magicgames-project_Dreamteam/assets/arrowlft-f75428af.svg" alt="ліва стрілка" />
-
-    <div>
-      <img src="/Magicgames-project_Dreamteam/assets/gray-8203b225.svg" alt="Фото студента" />
-      <p>Ім’я студента</p>
-      <p>Інформація про роботу, яку він/вона виконав/ла</p>
+      <div class="gallery__section card" >
+    <div class="border"></div>
+    <h2 class="gallery__title">
+        Наша команда
+    </h2>
+    <div class="gallery__container">
+        <button class="gallery__arrow" data-arrow="left">
+            <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M51 1L1 51L51 101" stroke="black" />
+            </svg>
+        </button>
+        <ul class="gallery__list">
+            <li class="gallery__item">
+                <div class = "gallery__img"></div>
+                <h3 class="gallery__name">Ім’я студента</h3>
+                <p class="gallery__info">Інформація про роботу, яку він/вона виконав/ла</p>
+            </li>
+        </ul>
+        <button class="gallery__arrow" data-arrow="right">
+            <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L51 51L1 101" stroke="black" />
+            </svg>
+        </button>
     </div>
-
-    <img src="/Magicgames-project_Dreamteam/assets/arrowrght-5a5d6164.svg" alt="права стрілка" />
-  </div>
-
-  <div>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <ul class="gallery__indication">
+        <li class="gallery__indicator active__indicator"></li>
+        <li class="gallery__indicator"></li>
+        <li class="gallery__indicator"></li>
+        <li class="gallery__indicator"></li>
+        <li class="gallery__indicator"></li>
+        <li class="gallery__indicator"></li>
+        <li class="gallery__indicator"></li>
+    </ul>
 </div>
-
-
-      <div class="card">
-  <h2 class="card__title title">Футбол</h2>
+      <div class="football card" >
+  <h2 class="football__title">
+    Футбол
+  </h2>
   <div class="football__box">
     <div class="football__game" id="field">
-      <img class="football_rectangle" src="../img/green.svg" alt="поле" />
-      <img class="football__ball" id="ball" src="../img/football (1) 1.svg"  alt="мяч"/>
-      <img class="cursor" src="../img/cursor.svg" alt="курсор"  />
+      <img class="football__ball" id="ball" src="../img/football (1) 1.svg" alt="ball">
+      <img class="football__cursor" src="../img/cursor.svg" alt="cursor">
     </div>
   </div>
 </div>
