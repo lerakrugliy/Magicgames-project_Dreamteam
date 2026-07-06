@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .gallery {
     &__section{
         padding-bottom: 36px;
@@ -8,6 +9,7 @@
         font-weight: 400;
         font-size: 16px;
         text-align: center;
+        font-family: "Montserrat Alternates", sans-serif;
     }
     &__container{
         margin-top: 36px;
@@ -35,6 +37,7 @@
         overflow: hidden;
         display: flex;
         width: 315px;
+        font-family: "Montserrat Alternates", sans-serif;
     }
     &__item{
         min-width: 315px;
