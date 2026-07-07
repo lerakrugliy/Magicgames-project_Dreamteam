@@ -5,9 +5,17 @@
     color: #000;
     text-align: center;
 }
-
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid red;
+  background-color: white;
+}
 body{
     color: var(--main-text-color);
     font-family: var(--font-family);
     font-weight: 400;
+    background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

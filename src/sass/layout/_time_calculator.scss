@@ -1,0 +1,29 @@
+.content_calc_time{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 35px;
+}
+.calc_time_form{
+position: relative;
+}
+.calc_time_input{
+border-radius: 20px;
+padding: 10px 15px 10px 10px;
+width: 150px;
+height: 35px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+color: #7e7e7e;
+}
+.calc_time_button{
+
+width: 35px;
+height: 35px;
+padding: 10px;
+border-radius: 0 20px 20px 0;
+background-color: #000;
+position: absolute;
+left: 115px;
+}
