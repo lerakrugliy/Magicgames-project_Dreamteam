@@ -1,6 +1,3 @@
-
-
-
 const firstNum = document.querySelector(".firstnum_js");
 const secondNum = document.querySelector(".secondnum_js");
 const plus = document.querySelector(".plus_js");
