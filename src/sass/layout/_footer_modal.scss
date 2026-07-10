@@ -5,7 +5,7 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(46, 47, 66, 0.6);
+  background: var(--backdrop-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@
 .modal {
   width: 465px;
   height: 245px;
-  background: #ffffff;
+  background: var(--modal-bg);
   border-radius: 20px;
   padding: 32px;
   position: relative;

@@ -5,11 +5,13 @@ const resultEl = document.querySelector('.check_year__result');
 butEl.addEventListener('click', () => {
     if (isNaN(inputEl.value) || inputEl.value === '') {
         resultEl.innerHTML = 'Ви не ввели число';
-        resultEl.style.color = localStorage.getItem('theme') === 'true' ? '#fff' : '#000';
+        resultEl.classList.remove('success');
+        resultEl.classList.add('error');
     }
     else {
         resultEl.innerHTML = inputEl.value % 4 === 0 ? 'Ви народилися у високосний рік!' : 'Ви народилися не у високосний рік!';
-        resultEl.style.color = inputEl.value % 4 === 0 ? '#039900' : '#900';
+        resultEl.classList.remove('error');
+        resultEl.classList.add(inputEl.value % 4 === 0 ? 'success' : 'error');
         inputEl.value = '';
     }
 });
