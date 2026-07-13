@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-eb5555fd.js"></script>
-    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-b4cee163.css">
+    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-77e0e2c0.js"></script>
+    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-82f97e6d.css">
   </head>
   <body>
     
@@ -77,7 +77,7 @@
     <main>
       <div class="container">
       <h1 class="main_title">Популярні інтерактивні ігри</h1>
-      <section class="check_year__section" id="1">
+      <div class="check_year__section card" id="1">
     <div class="border"></div>
     <h2 class="check_year__title">
         Перевір в який рік ти народився
@@ -86,19 +86,13 @@
         <li class="check_year__field">
             <input type="text" class="check_year__input" placeholder="Введіть рік народження">
             <button type="button" class="check_year__but">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2" />
-                    <path
-                        d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-                        fill="white" />
-                </svg>
+                <img src="/Magicgames-project_Dreamteam/assets/search-dffae418.svg" alt="search">
             </button>
         </li>
         <li class="check_year__result"></li>
     </ul>
-</section>
-      
-<div class="guess-the-number__section card" >   
+</div>
+      <div class="guess-the-number__section card" >   
     <h2 class="guess-the-number__title title">Вгадай число, яке загадав комп’ютер</h2>
     <div class="guess-the-number__list">
         <div class="guess-the-number__item">
@@ -110,7 +104,7 @@
                 </svg>
             </button>
         </div>
-        <div class="guess-the-number__result">Введіть число від 1 до 5</li>
+        <div class="guess-the-number__result">Введіть число від 1 до 5</div>
     </div>
 </div>
 
@@ -146,7 +140,7 @@
       </button>
     </li>
   </ul>
-  <p class="rsp_result rsp_result_js">.</p>
+  <p class="rsp_result rsp_result_js"> </p>
   <button class="rsp_button rsp_button_js">Варіант компʼютера</button>
   <div class="rsp_score">
     <p class="rsp_score-result rsp_score_js">
@@ -280,6 +274,8 @@
       <form class="footer_subscribe-form">
         <input
           class="footer_subscribe-form-input"
+          type="email"
+          required
           placeholder="Ваша ел. адреса..."
         />
         <button type="button" class="footer_subscribe-form-button" data-modal-open>Підписатись</button>
