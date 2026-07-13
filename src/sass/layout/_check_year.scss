@@ -1,6 +1,5 @@
 .check_year{
     &__section{
-        padding-bottom: 36px;
         width: 576px;
         margin: 0 auto;
     }
@@ -35,18 +34,18 @@
         color: var(--number-color);
     }
     &__but {
-        display: block;
-        background-color: unset;
-        border: 0;
         width: 35px;
-        
+        height: 35px;
         padding: 10px;
+        border-radius: 0 20px 20px 0;
+        background-color: #000;
     }
     &__result{
         display: flex;
         align-items: center;
         font-weight: 400;
         font-size: 12px;
+        margin-left: 50px;
     }
 
     &__result.success{
