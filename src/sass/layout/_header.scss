@@ -1,4 +1,6 @@
 .header {
+  background-color: var(--container-bg);
+  color: var(--main-text-color);
 &__section{
   display: flex;
   align-items: center;

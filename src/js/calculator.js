@@ -32,12 +32,12 @@ equals.addEventListener("click", () => {
   const num2 = secondNum.value.trim();
 
   if (num1 === "" || num2 === "") {
-    calcResult.textContent = "Заповніть поля";
+    calcResult.textContent = "Помилка";
     return;
   }
 
   if (isNaN(num1) || isNaN(num2)) {
-    calcResult.textContent = "Тільки числа";
+    calcResult.textContent = "Помилка";
     return;
   }
 
@@ -61,14 +61,14 @@ equals.addEventListener("click", () => {
 
     case "/":
       if (b === 0) {
-        calcResult.textContent = "На нуль ділити не можна";
+        calcResult.textContent = "Помилка";
         return;
       }
       result = a / b;
       break;
 
     default:
-      calcResult.textContent = "Оберіть операцію!";
+      calcResult.textContent = "Помилка";
       return;
   }
 
