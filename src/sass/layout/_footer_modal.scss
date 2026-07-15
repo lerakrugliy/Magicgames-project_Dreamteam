@@ -9,7 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 300ms ease, visibility 300ms ease;
+  transition:
+    opacity 300ms ease,
+    visibility 300ms ease;
   z-index: 1000;
 
   top: 0;
@@ -23,7 +25,6 @@
   visibility: hidden;
   pointer-events: none;
 }
-
 
 .modal {
   width: 465px;
@@ -50,25 +51,25 @@
     font-size: 20px;
     text-align: center;
   }
-  &_img{
+  &_img {
     position: absolute;
     width: 30px;
     height: 30px;
-    &-sword{
-        top: 80px;
-        left: 50px;
+    &-sword {
+      top: 80px;
+      left: 50px;
     }
-    &-ttt{
-        top: 160px;
-        right: 100px;
+    &-ttt {
+      top: 160px;
+      right: 100px;
     }
-    &-game{
-        top: 80px;
-        right: 50px;
+    &-game {
+      top: 80px;
+      right: 50px;
     }
-    &-puzzle{
-        top: 160px;
-        left: 100px;
+    &-puzzle {
+      top: 160px;
+      left: 100px;
     }
   }
 }

@@ -20,7 +20,7 @@
     font-size: 12px;
     color: var(--second-text-color);
     background-color: var(--main-text-color);
-    .dark &{
+    .dark & {
       color: var(--number-color);
     }
   }

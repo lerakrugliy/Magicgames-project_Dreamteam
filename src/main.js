@@ -1,6 +1,7 @@
+import "./js/header_modal";
 import "./js/header";
 import "./js/check_year";
-import "./js/guest_num";
+import "./js/guess_num";
 import "./js/rock_scissors_paper";
 import "./js/calculator";
 import "./js/time_calculator";
