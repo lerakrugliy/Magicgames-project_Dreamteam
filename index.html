@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Magicgames-project_Dreamteam/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Magicgames-project_Dreamteam/favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Magic games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,37 +19,118 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-42543686.js"></script>
-    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-9ec054aa.css">
+    <script type="module" crossorigin src="/Magicgames-project_Dreamteam/assets/index-9a4c2058.js"></script>
+    <link rel="stylesheet" href="/Magicgames-project_Dreamteam/assets/index-6a776dd3.css">
   </head>
   <body>
-    
+    <div class="backdrop" data-modal-header>
+  <div class="modal_header">
+    <button
+      class="modal_header_close-button"
+      type="button"
+      data-modal-header-close
+    >
+      <img src="/Magicgames-project_Dreamteam/assets/close-4b3bd3f6.svg" alt="cross" />
+    </button>
+    <p class="modal_header_main-text">
+      Привіт! <br />
+      Ви потрапили на сайт інтерактивних ігор та завдань <br />
+      Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+      Бажаємо Вам гарно провести час!
+    </p>
+    <p class="modal_header-text">Введіть своє ім’я:</p>
+    <form class="modal_header-form">
+      <input
+        class="modal_header-input"
+        type="text"
+        placeholder="Ваше ім’я..."
+      />
+      <button
+        type="button"
+        class="modal_header-button"
+        data-modal-header-close-btn
+      >
+        Зберегти
+      </button>
+    </form>
+
+    <img
+      src="/Magicgames-project_Dreamteam/assets/sword-fa141715.svg"
+      alt="sword"
+      class="modal_header_img modal_header_img-sword"
+    />
+    <img
+      src="/Magicgames-project_Dreamteam/assets/tic-tac-toe-300ec219.svg"
+      alt="tic-tac-toe"
+      class="modal_header_img modal_header_img-ttt"
+    />
+    <img
+      src="/Magicgames-project_Dreamteam/assets/game-development-a70ad7d8.svg"
+      alt="game"
+      class="modal_header_img modal_header_img-game"
+    />
+    <img
+      src="/Magicgames-project_Dreamteam/assets/puzzle-f7db1c80.svg"
+      alt="puzzle"
+      class="modal_header_img modal_header_img-puzzle"
+    />
+  </div>
+</div>
+
     <header class="header">
   <div class="container">
     <section class="header__section">
       <div class="logo">
-        <img src="/Magicgames-project_Dreamteam/assets/logo-334c5781.svg" class="logo__img" alt="Logo">
+        <img
+          src="/Magicgames-project_Dreamteam/assets/logo-334c5781.svg"
+          class="logo__img"
+          alt="Logo"
+          style="width: 93px; height: 38px"
+        />
       </div>
 
       <ul class="header__list">
         <li class="header__item">
           <p class="header__text">
             Інтерактив
-            <svg class="header__svg" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 1L5.5 6L1 1" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
+            <svg
+              class="header__svg"
+              width="11"
+              height="7"
+              viewBox="0 0 11 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 1L5.5 6L1 1"
+                stroke="black"
+                stroke-width="0.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </p>
 
           <ul class="header__selector">
-            <li><button type="button" class="header__select">Всі секції</button></li>
-            <li><button type="button" class="header__select">Числовий</button></li>
-            <li><button type="button" class="header__select">Ігровий</button></li>
-            <li><button type="button" class="header__select">Ознайомчий</button></li>
+            <li>
+              <button type="button" class="header__select">Всі секції</button>
+            </li>
+            <li>
+              <button type="button" class="header__select">Числовий</button>
+            </li>
+            <li>
+              <button type="button" class="header__select">Ігровий</button>
+            </li>
+            <li>
+              <button type="button" class="header__select last">
+                Ознайомчий
+              </button>
+            </li>
           </ul>
         </li>
 
         <li class="header__item">
-          <a href="#our_team" class="header__text">Наша команда</a>
+          <a href="#gallery" class="header__text">Наша команда</a>
         </li>
 
         <li class="header__item">
@@ -61,8 +142,13 @@
         <li class="header__switch">
           <button class="header__switcher">
             <div class="header__icon">
-              <img src="/Magicgames-project_Dreamteam/assets/sun-0556f006.png" alt="Sun" class="header__img" data-sun>
-              <img src="/Magicgames-project_Dreamteam/assets/moon-3000bb6d.png" alt="Moon" class="header__img" data-moon>
+              <img src="/Magicgames-project_Dreamteam/assets/sun-0556f006.png" alt="Sun" class="header__img" data-sun />
+              <img
+                src="/Magicgames-project_Dreamteam/assets/moon-3000bb6d.png"
+                alt="Moon"
+                class="header__img"
+                data-moon
+              />
             </div>
           </button>
         </li>
@@ -74,40 +160,64 @@
     </section>
   </div>
 </header>
+
     <main>
       <div class="container">
       <h1 class="main_title">Популярні інтерактивні ігри</h1>
       <div class="check_year__section card" id="1">
-    <div class="border"></div>
-    <h2 class="check_year__title">
-        Перевір в який рік ти народився
-    </h2>
-    <ul class="check_year__list">
-        <li class="check_year__field">
-            <input type="text" class="check_year__input" placeholder="Введіть рік народження">
-            <button type="button" class="check_year__but">
-                <img src="/Magicgames-project_Dreamteam/assets/search-dffae418.svg" alt="search">
-            </button>
-        </li>
-        <li class="check_year__result"></li>
-    </ul>
-</div>
-      <div class="guess-the-number__section card" >   
-    <h2 class="guess-the-number__title title">Вгадай число, яке загадав комп’ютер</h2>
-    <div class="guess-the-number__list">
-        <div class="guess-the-number__item">
-            <input type="text" class="guess-the-number__input" placeholder="Введіть число">
-            <button type="button" class="guess-the-number__but">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2" />
-                    <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white" />
-                </svg>
-            </button>
-        </div>
-        <div class="guess-the-number__result">Введіть число від 1 до 5</div>
-    </div>
+  <div class="border"></div>
+  <h2 class="check_year__title">Перевір в який рік ти народився</h2>
+  <ul class="check_year__list">
+    <li class="check_year__field">
+      <input
+        type="text"
+        class="check_year__input"
+        placeholder="Введіть рік народження"
+      />
+      <button type="button" class="check_year__but">
+        <img src="/Magicgames-project_Dreamteam/assets/search-dffae418.svg" alt="search" />
+      </button>
+    </li>
+    <li class="check_year__result"></li>
+  </ul>
 </div>
 
+      <div class="guess-the-number__section card">
+  <h2 class="guess-the-number__title title">
+    Вгадай число, яке загадав комп’ютер
+  </h2>
+  <div class="guess-the-number__list">
+    <form class="guess-the-number__item">
+      <input
+        type="text"
+        class="guess-the-number__input"
+        placeholder="Введіть число"
+      />
+      <button type="button" class="guess-the-number__but">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="6.52174"
+            cy="6.52174"
+            r="5.52174"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </form>
+    <div class="guess-the-number__result">Введіть число від 1 до 5</div>
+  </div>
+</div>
 
       <div class="rsp card">
   <h2 class="rsp_title title">Камінь - ножиці - папір</h2>
@@ -140,7 +250,7 @@
       </button>
     </li>
   </ul>
-  <p class="rsp_result rsp_result_js"> </p>
+  <p class="rsp_result rsp_result_js"></p>
   <button class="rsp_button rsp_button_js">Варіант компʼютера</button>
   <div class="rsp_score">
     <p class="rsp_score-result rsp_score_js">
@@ -150,7 +260,6 @@
     </p>
   </div>
 </div>
-
       <div class="calc card">
   <h2 class="calc_title title">Калькулятор</h2>
   <div class="calc_content">
@@ -182,108 +291,143 @@
     <p class="calc_content-result calc_result_js">Результат</p>
   </div>
 </div>
-
       <div class="calc_time card">
-    <h2 class="calc_time_title title">Калькулятор часу</h2>
-    <div class="content_calc_time calc_time_form_js">
+  <h2 class="calc_time_title title">Калькулятор часу</h2>
+  <div class="content_calc_time calc_time_form_js">
     <form class="calc_time_form">
-      <input class="calc_time_input calc_time_input_js" type="text" placeholder="Введіть число"/>
-      <button class="calc_time_button" type="submit"><img src="/Magicgames-project_Dreamteam/assets/search-dffae418.svg" alt="search"></button>
+      <input
+        class="calc_time_input calc_time_input_js"
+        type="text"
+        placeholder="Введіть число"
+      />
+      <button class="calc_time_button" type="submit">
+        <img src="/Magicgames-project_Dreamteam/assets/search-dffae418.svg" alt="search" />
+      </button>
     </form>
-    <img src="/Magicgames-project_Dreamteam/assets/loading-42ba5bb8.svg" alt="loading">
+    <img src="/Magicgames-project_Dreamteam/assets/loading-42ba5bb8.svg" alt="loading" />
     <p class="calc_time_text calc_time_text_js">0 дн. 00:00:00</p>
-    </div>
+  </div>
 </div>
 
       <div class="biggest_num card">
-    <div class="border"></div>
-    <h2 class="number__title title">Введіть 3 числа</h2>
-    <div class="num__list">
-        <input class="num__item" type="text" placeholder="Введіть число" id="one-input">
-        <input class="num__item" type="text" placeholder="Введіть число" id="two-input">
-        <input class="num__item" type="text" placeholder="Введіть число" id="three-input">
-    </div>
-    <p class="number__text" id="time-result">Найбільше число, яке ви ввели -</p>
+  <div class="border"></div>
+  <h2 class="number__title title">Введіть 3 числа</h2>
+  <div class="num__list">
+    <input
+      class="num__item"
+      type="text"
+      placeholder="Введіть число"
+      id="one-input"
+    />
+    <input
+      class="num__item"
+      type="text"
+      placeholder="Введіть число"
+      id="two-input"
+    />
+    <input
+      class="num__item"
+      type="text"
+      placeholder="Введіть число"
+      id="three-input"
+    />
+  </div>
+  <p class="number__text" id="time-result">Найбільше число, яке ви ввели -</p>
 </div>
-      <div class="gallery__section">
-    <div class="border"></div>
-    <h2 class="gallery__title card">Наша команда</h2>
-    
-    <div class="gallery__container">
-        <button class="gallery__arrow" data-arrow="left">
-            <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://w3.org">
-                <path d="M51 1L1 51L51 101" stroke="black" />
-            </svg>
-        </button>
 
-        <ul class="gallery__list">
-            <li class="gallery__item">
-                <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/lera-6c738b2a.jpg" alt="lera-photo">
-                <h3 class="gallery__name">Лера</h3>
-                <p class="gallery__info">Teamlead</p>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/vova-150a8218.jpg" alt="Vova-photo">
-                <h3 class="gallery__name">Вова</h3>
-                <p class="gallery__info">Scrum master</p>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/maxim-768aa413.jpg" alt="max=photo">
-                <h3 class="gallery__name">Максим</h3>
-                <p class="gallery__info">Developer</p>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/kolya-4130560a.jpg" alt="kolya-photo">
-                <h3 class="gallery__name">Коля</h3>
-                <p class="gallery__info">Developer</p>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/kiril-d747a5c4.jpg" alt="kiril-photo">
-                <h3 class="gallery__name">Кіріл</h3>
-                <p class="gallery__info">Developer</p>
-            </li>
-        </ul>
+      <div class="gallery__section" id="gallery">
+  <div class="border"></div>
+  <h2 class="gallery__title card">Наша команда</h2>
 
-        <button class="gallery__arrow" data-arrow="right">
-            <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://w3.org">
-                <path d="M1 1L51 51L1 101" stroke="black" />
-            </svg>
-        </button>
-    </div>
+  <div class="gallery__container">
+    <button class="gallery__arrow" data-arrow="left">
+      <svg
+        width="52"
+        height="102"
+        viewBox="0 0 52 102"
+        fill="none"
+        xmlns="http://w3.org"
+      >
+        <path d="M51 1L1 51L51 101" stroke="black" />
+      </svg>
+    </button>
 
-    <ul class="gallery__indication">
-        <li class="gallery__indicator active__indicator"></li>
-        <li class="gallery__indicator"></li>
-        <li class="gallery__indicator"></li>
-        <li class="gallery__indicator"></li>
-        <li class="gallery__indicator"></li>
+    <ul class="gallery__list">
+      <li class="gallery__item">
+        <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/lera-6c738b2a.jpg" alt="lera-photo" />
+        <h3 class="gallery__name">Лера</h3>
+        <p class="gallery__info">Teamlead</p>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/vova-150a8218.jpg" alt="Vova-photo" />
+        <h3 class="gallery__name">Вова</h3>
+        <p class="gallery__info">Scrum master</p>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/maxim-768aa413.jpg" alt="max=photo" />
+        <h3 class="gallery__name">Максим</h3>
+        <p class="gallery__info">Developer</p>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/kolya-4130560a.jpg" alt="kolya-photo" />
+        <h3 class="gallery__name">Коля</h3>
+        <p class="gallery__info">Developer</p>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__img" src="/Magicgames-project_Dreamteam/assets/kiril-d747a5c4.jpg" alt="kiril-photo" />
+        <h3 class="gallery__name">Кіріл</h3>
+        <p class="gallery__info">Developer</p>
+      </li>
     </ul>
+
+    <button class="gallery__arrow" data-arrow="right">
+      <svg
+        width="52"
+        height="102"
+        viewBox="0 0 52 102"
+        fill="none"
+        xmlns="http://w3.org"
+      >
+        <path d="M1 1L51 51L1 101" stroke="black" />
+      </svg>
+    </button>
+  </div>
+
+  <ul class="gallery__indication">
+    <li class="gallery__indicator active__indicator"></li>
+    <li class="gallery__indicator"></li>
+    <li class="gallery__indicator"></li>
+    <li class="gallery__indicator"></li>
+    <li class="gallery__indicator"></li>
+  </ul>
 </div>
 
-      <div class="football card" >
-  <h2 class="football__title">
-    Футбол
-  </h2>
+      <div class="football card">
+  <h2 class="football__title">Футбол</h2>
   <div class="football__box">
     <div class="football__game" id="field">
       <img class="football_rectangle" src="/Magicgames-project_Dreamteam/assets/green-09dfaa86.svg" alt="поле" />
-      <img class="football__ball" id="ball" src="/Magicgames-project_Dreamteam/assets/football (1) 1-40150b79.svg"  alt="мяч"/>
-      <!-- <img class="football__cursor" src="../img/cursor.svg" alt="курсор"  /> -->
+      <img
+        class="football__ball"
+        id="ball"
+        src="/Magicgames-project_Dreamteam/assets/football-40150b79.svg"
+        alt="мяч"
+      />
     </div>
   </div>
 </div>
 
       <div class="choose_scientist card">
-    <h2 class="choose_scientist_title title">Обери вченого/их</h2>
-    <ul class="choose_scientist_list"></ul>
-    <div class="choose_scientist_request"></div>
+  <h2 class="choose_scientist_title title">Обери вченого/их</h2>
+  <ul class="choose_scientist_list"></ul>
+  <div class="choose_scientist_request"></div>
 </div>
 
       </div>
     </main>
     <footer id="footer" class="footer">
   <div class="footer_container">
-    <img src="/Magicgames-project_Dreamteam/assets/logo-334c5781.svg" alt="logo" style="width: 165px; height: 70px;"/>
+    <img src="/Magicgames-project_Dreamteam/assets/logo-334c5781.svg" alt="logo" style="width: 165px; height: 70px" />
     <p class="footer_text">
       Тел: +38 (123) 456 78 90 <br />
       E-Mail: codingmagic@gmail.com <br />
@@ -299,7 +443,13 @@
           required
           placeholder="Ваша ел. адреса..."
         />
-        <button type="button" class="footer_subscribe-form-button" data-modal-open>Підписатись</button>
+        <button
+          type="button"
+          class="footer_subscribe-form-button"
+          data-modal-open
+        >
+          Підписатись
+        </button>
       </form>
       <p class="footer_subscribe-text">
         *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
@@ -311,13 +461,25 @@
     <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal_close_button" type="button" data-modal-close>
-        <img src="/Magicgames-project_Dreamteam/assets/close-4b3bd3f6.svg" alt="cross">
+      <img src="/Magicgames-project_Dreamteam/assets/close-4b3bd3f6.svg" alt="cross" />
     </button>
     <h2 class="modal_title">Дякую за підписку!</h2>
-    <img src="/Magicgames-project_Dreamteam/assets/sword-fa141715.svg" alt="sword" class="modal_img modal_img-sword">
-    <img src="/Magicgames-project_Dreamteam/assets/tic-tac-toe-300ec219.svg" alt="tic-tac-toe" class="modal_img modal_img-ttt">
-    <img src="/Magicgames-project_Dreamteam/assets/game-development-a70ad7d8.svg" alt="game" class="modal_img modal_img-game">
-    <img src="/Magicgames-project_Dreamteam/assets/puzzle-f7db1c80.svg" alt="puzzle" class="modal_img modal_img-puzzle">
+    <img src="/Magicgames-project_Dreamteam/assets/sword-fa141715.svg" alt="sword" class="modal_img modal_img-sword" />
+    <img
+      src="/Magicgames-project_Dreamteam/assets/tic-tac-toe-300ec219.svg"
+      alt="tic-tac-toe"
+      class="modal_img modal_img-ttt"
+    />
+    <img
+      src="/Magicgames-project_Dreamteam/assets/game-development-a70ad7d8.svg"
+      alt="game"
+      class="modal_img modal_img-game"
+    />
+    <img
+      src="/Magicgames-project_Dreamteam/assets/puzzle-f7db1c80.svg"
+      alt="puzzle"
+      class="modal_img modal_img-puzzle"
+    />
   </div>
 </div>
 
