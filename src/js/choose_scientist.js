@@ -84,119 +84,144 @@ const scientists = [
     id: 12,
   },
 ];
-const card = document.querySelector('.div-ul-scientist');
-function createLi(scientists) {
-  card.innerHTML = '';
-  scientists.forEach(scientist => {
-    const cardItem = document.createElement('li');
-    const name = document.createElement('p');
-    const life = document.createElement('p');
-    name.textContent = `${scientist.name} ${scientist.surname}`;
-    life.textContent = `${scientist.born} - ${scientist.dead}`;
-    cardItem.style.width = '100px';
-    cardItem.style.height = '100px';
-    cardItem.style.backgroundColor = 'rgba(217, 217, 217, 1)';
-    cardItem.style.borderRadius = '20px';
-    name.style.fontSize = '8px';
-    life.style.fontSize = '8px';
-    name.style.fontWeight = '400';
-    life.style.fontWeight = '400';
-    name.style.fontFamily = 'var(--font-family)';
-    life.style.fontFamily = 'var(--font-family)';
-    name.style.textAlign = 'center';
-    life.style.textAlign = 'center';
-    // name.style.paddingTop = "41px"
-    cardItem.classList.add('card');
-    cardItem.append(name, life);
-    card.append(cardItem);
-  });
-}
-createLi(scientists);
-const p1 = document.querySelector('.scientist-div-p-1');
-p1.addEventListener('click', bornIn19ST);
-function bornIn19ST() {
-  const whobornIn19ST = scientists.filter(human => {
-    return 1800 <= human.born && human.born <= 1900;
-  });
-  createLi(whobornIn19ST);
-}
 
-const p2 = document.querySelector('.scientist-div-p-7');
-p2.addEventListener('click', futureborned);
-function futureborned() {
-  const orderYearsArrB = scientists.sort((a, b) => {
-    return b.born - a.born;
-  });
-  createLi([orderYearsArrB[0]]);
-  console.log(orderYearsArrB);
-}
+const prompts = [
+  'отримати масив вчених що народилися в 19 ст',
+  'Відсортувати вчених по алфавіту',
+  'Відсортувати вчених по кількості прожитих років',
+  'Знайти вченого який народився найпізніше.',
+  'Знайти рік народження Albert Einstein',
+  'знайти вчених прізвище яких починається на літеру С',
+  'Видалити з масива всіх вчених імя яких починається на A',
+  'Знайти вченого який прожив найбільше і вченого який прожив найменьше',
+  'Знайти вчених в яких співпадають перші літери імені і прізвища',
+];
 
-const p3 = document.querySelector('.scientist-div-p-3');
-p3.addEventListener('click', sortByAlfabet);
-function sortByAlfabet() {
-  const sorted = scientists.sort((a, b) => {
-    return a.surname.localeCompare(b.surname);
-  });
-  createLi(sorted);
-}
+const scientistsEl = document.querySelector('.info__scientists');
 
-const p4 = document.querySelector('.scientist-div-p-5');
+scientists.forEach(
+  scientist =>
+    (scientistsEl.innerHTML += `
+    <li class="info__scientist" data-id="${scientist.id}">
+        <p class="info__name">${scientist.name} ${scientist.surname}</p>
+        <p class="info__lifeYears">${scientist.born}-${scientist.dead} years</p>
+    </li>
+`)
+);
 
-p4.addEventListener('click', orderYears);
-function orderYears() {
-  const orderYearsArrA = scientists.sort((a, b) => {
-    const lifeYearsA = a.dead - a.born;
-    const lifeYearsB = b.dead - b.born;
-    return lifeYearsA - lifeYearsB;
-  });
-  createLi(orderYearsArrA);
-}
+const promptsEl = document.querySelector('.info__prompts');
 
-const p5 = document.querySelector('.scientist-div-p-2');
-p5.addEventListener('click', yearsOfAlbertEnstein);
-function yearsOfAlbertEnstein() {
-  const AlbertEnsteinYears = scientists.find(scientist => {
-    return scientist.name === 'Albert';
-  });
-  createLi([AlbertEnsteinYears]);
-}
+prompts.forEach(
+  (scientist, idx) =>
+    (promptsEl.innerHTML += `
+    <li class="info__prompt">
+        <button class="info__but" data-promptNum="${idx}">${scientist}</button>
+    </li>
+`)
+);
 
-const p6 = document.querySelector('.scientist-div-p-4');
-p6.addEventListener('click', StartC);
-function StartC() {
-  const chelC = scientists.filter(chel => {
-    return chel.name.startsWith('C') || chel.surname.startsWith('C');
-  });
-  createLi(chelC);
-  console.log(chelC);
-}
-
-const p7 = document.querySelector('.scientist-div-6');
-p7.addEventListener('click', noA);
-function noA() {
-  const filteredScientists = scientists.filter(scientist => {
-    return (
-      !scientist.name.startsWith('A') && !scientist.surname.startsWith('A')
+const showScientists = scientistsToShow => {
+  scientistsEl.innerHTML = '';
+  if (Array.isArray(scientistsToShow)) {
+    scientistsToShow.forEach(
+      scientistId =>
+        (scientistsEl.innerHTML += `
+            <li class="info__scientist showAnim" data-id="${scientistId}">
+                <p class="info__name">${scientists.find(scientist => scientist.id === scientistId).name} ${scientists.find(scientist => scientist.id === scientistId).surname}</p>
+                <p class="info__lifeYears">${scientists.find(scientist => scientist.id === scientistId).born}-${scientists.find(scientist => scientist.id === scientistId).dead} years</p>
+            </li>
+        `)
     );
-  });
-  createLi(filteredScientists);
-}
+    setTimeout(
+      () =>
+        scientistsToShow.forEach(scientistId =>
+          document
+            .querySelector(`.info__scientist[data-id="${scientistId}"]`)
+            .classList.remove('showAnim')
+        ),
+      200
+    );
+  } else {
+    scientistsEl.innerHTML += `
+            <li class="info__scientist" data-id="${scientistsToShow}">
+                <p class="info__name">${scientistsToShow.name} ${scientistsToShow.surname}</p>
+                <p class="info__lifeYears">${scientistsToShow.born}-${scientistsToShow.dead} years</p>
+            </li>
+        `;
+  }
+};
 
-const p8 = document.querySelector('.scientist-div-p-8');
-p8.addEventListener('click', timeOfLife);
-function timeOfLife() {
-  const sorted = [...scientists].sort((b, a) => {
-    return a.dead - a.born - (b.dead - b.born);
-  });
-  createLi([sorted[0], sorted[sorted.length - 1]]);
-}
-
-const p9 = document.querySelector('.divv-p');
-p9.addEventListener('click', izgoy);
-function izgoy() {
-  const filteredScientists = scientists.filter(
-    ({ name, surname }) =>
-      name && surname && name[0].toLowerCase() === surname[0].toLowerCase()
-  );
-  createLi(filteredScientists);
-}
+promptsEl.addEventListener('click', e => {
+  switch (e.target.getAttribute('data-promptNum')) {
+    case '0':
+      showScientists(
+        scientists
+          .filter(scientist => scientist.born > 1800 && scientist.born <= 1900)
+          .map(scientist => scientist.id)
+      );
+      break;
+    case '1':
+      showScientists(
+        scientists
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map(scientist => scientist.id)
+      );
+      break;
+    case '2':
+      showScientists(
+        scientists
+          .sort((a, b) => b.dead - b.born - (a.dead - a.born))
+          .map(scientist => scientist.id)
+      );
+      break;
+    case '3':
+      showScientists(scientists.sort((a, b) => b.born - a.born)[0]);
+      break;
+    case '4':
+      showScientists(
+        scientists.find(
+          scientist =>
+            scientist.name === 'Albert' && scientist.surname === 'Einstein'
+        )
+      );
+      break;
+    case '5':
+      showScientists(
+        scientists
+          .filter(scientist => scientist.surname.startsWith('C'))
+          .map(scientist => scientist.id)
+      );
+      break;
+    case '6':
+      showScientists(
+        scientists
+          .filter(scientist => !scientist.name.startsWith('A'))
+          .map(scientist => scientist.id)
+      );
+      break;
+    case '7':
+      showScientists(
+        [
+          Math.max(
+            ...scientists.map(scientist => scientist.dead - scientist.born)
+          ),
+          Math.min(
+            ...scientists.map(scientist => scientist.dead - scientist.born)
+          ),
+        ].map(
+          lifeYears =>
+            scientists.find(
+              scientist => scientist.dead - scientist.born === lifeYears
+            ).id
+        )
+      );
+      break;
+    case '8':
+      showScientists(
+        scientists
+          .filter(scientist => scientist.name[0] === scientist.surname[0])
+          .map(scientist => scientist.id)
+      );
+      break;
+  }
+});
