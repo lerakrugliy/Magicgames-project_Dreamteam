@@ -119,14 +119,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
     transition: all 0.25s;
+    color: var(--main-text-color);
+    background-color: var(--selector-bg);
     &:hover {
       background-color: var(--hover-bg) !important;
       color: var(--fifth-text-color) !important;
-    }
-    &:nth-child(1) {
-      background-color: var(--selector-bg);
     }
     &.active {
       background-color: var(--selector-bg) !important;
