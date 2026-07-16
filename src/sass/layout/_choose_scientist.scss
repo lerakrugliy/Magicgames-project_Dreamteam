@@ -45,16 +45,14 @@
       opacity: 0;
     }
   }
-&__prompts {
+  &__prompts {
     width: 850px;
     margin: 36px auto 0;
     padding: 0;
     list-style: none;
-
-    // Вмикаємо сітку на 2 колонки
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px 36px; // 20px між рядками, 36px між колонками
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 36px;
   }
 
   &__prompt {
@@ -83,8 +81,8 @@
     max-width: 420px;
     text-wrap: wrap;
     transition:
-    background-color 0.25s,
-    color 0.25s;
+      background-color 0.25s,
+      color 0.25s;
 
     &:hover {
       background-color: #fff;
