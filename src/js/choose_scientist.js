@@ -111,15 +111,17 @@ scientists.forEach(
 
 const promptsEl = document.querySelector('.info__prompts');
 
-prompts.forEach(
-  (scientist, idx) =>
-    (promptsEl.innerHTML += `
-    <li class="info__prompt">
-        <button class="info__but" data-promptNum="${idx}">${scientist}</button>
-    </li>
-`)
-);
+promptsEl.innerHTML = '';
 
+prompts.forEach((prompt, idx) => {
+  promptsEl.innerHTML += `
+      <li class="info__prompt">
+          <button class="info__but" data-promptNum="${idx}">
+              ${prompt}
+          </button>
+      </li>
+  `;
+});
 const showScientists = scientistsToShow => {
   scientistsEl.innerHTML = '';
   if (Array.isArray(scientistsToShow)) {

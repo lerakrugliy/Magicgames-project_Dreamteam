@@ -45,29 +45,49 @@
       opacity: 0;
     }
   }
-  &__prompts {
-    margin-top: 36px;
-    gap: 20px 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+&__prompts {
+    width: 850px;
+    margin: 36px auto 0;
+    padding: 0;
     list-style: none;
+
+    // Вмикаємо сітку на 2 колонки
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px 36px; // 20px між рядками, 36px між колонками
+  }
+
+  &__prompt {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    &:nth-child(odd) {
+      justify-content: flex-end;
+    }
+    &:nth-child(even) {
+      justify-content: flex-start;
+    }
+    &:last-child {
+      grid-column: span 2;
+      justify-content: center;
+    }
   }
   &__but {
+    border: none;
+    white-space: normal;
     border-radius: 20px;
-    padding: 10px 20px;
-    height: 35px;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     background-color: #000;
     padding: 10px 20px;
     font-size: 12px;
-    color: #ffffff;
+    color: #fff;
+    max-width: 420px;
+    text-wrap: wrap;
     transition:
-      background-color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms,
-      color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
+    background-color 0.25s,
+    color 0.25s;
+
     &:hover {
-      background-color: #ffffff;
+      background-color: #fff;
       color: #000;
     }
   }
